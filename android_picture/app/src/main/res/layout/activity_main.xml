@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="89dp"
+        android:text="선택을 하시겠습니까(김성호)"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="293dp"
+        android:text="시작하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="91dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="좋아하는 안드로이드 버전은?"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <RadioButton
+            android:id="@+id/Q_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q" />
+
+        <RadioButton
+            android:id="@+id/R_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R" />
+
+        <RadioButton
+            android:id="@+id/S_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/Q_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="210dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:srcCompat="@drawable/q" />
+
+    <ImageView
+        android:id="@+id/R_img"
+        android:layout_width="138dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="211dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:srcCompat="@drawable/r" />
+
+    <ImageView
+        android:id="@+id/S_img"
+        android:layout_width="137dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="211dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:srcCompat="@drawable/s" />
+
+    <Button
+        android:id="@+id/end_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="271dp"
+        android:text="종료하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Q_img" />
+
+    <Button
+        android:id="@+id/return_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="270dp"
+        android:text="처음으로"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

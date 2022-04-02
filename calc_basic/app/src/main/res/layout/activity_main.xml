@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="67dp"
+        android:text="2018038069김성호"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/plus_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num1_et"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="피연산자1"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2_et"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="피연산자2"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/plus_btn"
+        app:layout_constraintEnd_toStartOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/plus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="38dp"
+        android:text="더하기"
+        app:layout_constraintTop_toBottomOf="@+id/num2_et"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/minus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="빼기"
+        app:layout_constraintTop_toBottomOf="@+id/plus_btn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/mul_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="곱하기"
+        app:layout_constraintTop_toBottomOf="@+id/minus_btn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/div_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="나누기"
+        app:layout_constraintTop_toBottomOf="@+id/mul_btn"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/mod_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="나머지계산"
+        app:layout_constraintTop_toBottomOf="@+id/div_btn"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="187dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mod_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
