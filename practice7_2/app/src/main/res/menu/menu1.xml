@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemRed"
+        android:title="빨간 배경">
+    </item>
+    <item
+        android:id="@+id/itemBlue"
+        android:title="파란 배경">
+    </item>
+    <item
+        android:id="@+id/itemRGreen"
+        android:title="초록 배경">
+    </item>
+
+</menu>
